@@ -1,0 +1,154 @@
+.catalog-photo {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.catalog-photo__text {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.catalog-photo__list {
+  @include clear-list;
+}
+
+.catalog-photo__item {
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  border-top: 1px solid $color-grey-two;
+
+  &:last-child {
+    border-bottom: 1px solid $color-grey-two;
+  }
+}
+
+.catalog-photo__img {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.catalog-photo__img-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.catalog-photo__like {
+  font-weight: 700;
+  margin-left: 37px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -37px;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .catalog-photo {
+    width: $width-tablet;
+  }
+
+  .catalog-photo__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .catalog-photo__text {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+
+  .catalog-photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .catalog-photo__item {
+    padding: 0;
+    border: none;
+    width: 324px;
+
+    &:last-child {
+      border: none;
+    }
+
+    &--first {
+      width: 648px;
+    }
+  }
+
+  .catalog-photo__img {
+    width: 324px;
+    height: 267px;
+
+    &--first {
+      width: 648px;
+      height: 400px;
+    }
+  }
+
+  .catalog-photo__box {
+    background-color: $color-grey-four;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog-photo {
+    width: $width-desktop;
+  }
+
+  .catalog-photo__text {
+    margin-left: 386px;
+    margin-right: 386px;
+  }
+
+  .catalog-photo__list {
+    padding: 0;
+  }
+
+  .catalog-photo__item {
+    width: 400px;
+    position: relative;
+
+    &--first {
+      width: 1200px;
+    }
+  }
+
+  .catalog-photo__img {
+    width: 400px;
+
+    &--first {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+
+  .catalog-photo__box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba($color-dark, 0.6);
+    color: $color-light;
+  }
+}

@@ -1,0 +1,39 @@
+.social {
+  @include clear-list;
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: $main-color;
+}
+
+.social__img {
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  &--youtube {
+    width: 20px;
+    height: 14px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .social {
+    margin: 0;
+  }
+}

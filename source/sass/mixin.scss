@@ -1,0 +1,9 @@
+@mixin title-font {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin clear-list {
+  list-style: none;
+  padding-left: 0;
+}
