@@ -1,0 +1,116 @@
+.main-header {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main-header__logo {
+  position: absolute;
+  z-index: 2;
+  bottom: -33px;
+  left: 110px;
+}
+
+.main-header__logo-img {
+  width: 102px;
+  height: 83px;
+}
+
+.main-header__nav {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.main-header__btn-menu {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.main-header__btn-img {
+  width: 23px;
+  height: 22px;
+}
+
+.main-header__list {
+  @include clear-list;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.main-header__link {
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color-light;
+  text-align: center;
+  background-color: $main-color;
+  display: block;
+  width: 100%;
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.main-header__wrap {
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position-y: 240px;
+  background-position-x: 275px;
+}
+
+@media (min-width: $width-tablet) {
+  .main-header {
+    width: $width-tablet;
+  }
+
+  .main-header__list {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .main-header__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .main-header__link {
+    width: 153px;
+    background-color: $color-light;
+    color: $color-dark;
+    font-size: 14px;
+    line-height: 26px;
+    border: none;
+    box-shadow: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-header__logo {
+    left: 335px;
+  }
+
+  .main-header__btn-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-header {
+    width: $width-desktop;
+  }
+
+  .main-header__link {
+    width: 239px;
+  }
+
+  .main-header__logo {
+    left: 550px;
+  }
+}

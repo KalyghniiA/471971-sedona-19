@@ -1,0 +1,114 @@
+.feature {
+  text-align: center;
+  background-color: $color-grey-two;
+  position: relative;
+
+  &--active {
+    background-color: $main-color;
+    color: $color-light;
+  }
+
+  &--first {
+    &::before {
+      content: "";
+      width: 320px;
+      height: 26px;
+      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      z-index: 2;
+      position: absolute;
+      top: -26px;
+      left: 0;
+    }
+  }
+}
+
+.feature__box {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &--disabled {
+    border-bottom: 1px solid $color-grey-three;
+  }
+
+  &--last {
+    border: none;
+  }
+
+  &--active {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+
+.feature__title {
+  margin: 0;
+}
+
+.feature__img {
+  display: block;
+  width: 320px;
+  height: 260px;
+}
+
+@media (min-width: $width-tablet) {
+  .feature {
+    width: 256px;
+
+    &--active {
+      width: $width-tablet;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--first {
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  .feature__box {
+    width: 256px;
+    margin-left: 0;
+    margin-right: 0;
+
+    &--two {
+      order: 2;
+    }
+
+    &--disabled {
+      border: none;
+    }
+  }
+
+  .feature__img {
+    width: 512px;
+    height: 256px;
+
+    &--first {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .feature {
+    width: 400px;
+
+    &--active {
+      width: $width-desktop;
+    }
+  }
+
+  .feature__box {
+    width: 400px;
+  }
+
+  .feature__img {
+    width: 800px;
+  }
+}

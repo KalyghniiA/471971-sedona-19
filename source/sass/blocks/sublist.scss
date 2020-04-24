@@ -1,0 +1,131 @@
+.sublist {
+  @include clear-list;
+  background-color: $color-light;
+  color: $color-dark;
+  padding-left: 69px;
+  padding-right: 41px;
+  padding-top: 31px;
+  padding-bottom: 32px;
+  text-align: left;
+}
+
+.sublist__title {
+  text-align: left;
+  position: relative;
+
+  &--one::before {
+    content: "";
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 37px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+  }
+
+  &--two::before {
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+  }
+
+  &--three::before {
+    content: "";
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .sublist {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+  }
+
+  .sublist__subitem {
+    width: 256px;
+    padding-top: 164px;
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-bottom: 65px;
+
+    &--one {
+      order: 1;
+    }
+
+    &--two {
+      order: 3;
+    }
+
+    &--three {
+      order: 2;
+    }
+  }
+
+  .sublist__title {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+
+    &--one::before {
+      width: 75px;
+      height: 72px;
+      left: 40px;
+      bottom: 60px;
+    }
+
+    &--two::before {
+      width: 64px;
+      height: 76px;
+      left: 40px;
+      bottom: 60px;
+    }
+
+    &--three::before {
+      width: 77px;
+      height: 70px;
+      left: 40px;
+      bottom: 60px;
+    }
+  }
+
+  .sublist__description {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .sublist__subitem {
+    width: 400px;
+  }
+
+  .sublist__title {
+    &--one::before {
+      left: 110px;
+    }
+
+    &--two::before {
+      left: 115px;
+    }
+
+    &--three::before {
+      left: 110px;
+    }
+  }
+}

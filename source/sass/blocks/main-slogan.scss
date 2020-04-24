@@ -1,0 +1,83 @@
+.main-slogan {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 19px;
+  padding-bottom: 85px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 320px;
+    height: 26px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &--other {
+    padding-top: 52px;
+    padding-bottom: 67px;
+    padding-left: 46px;
+    padding-right: 46px;
+    background-position-y: bottom;
+  }
+}
+
+.main-slogan__img {
+  width: 281px;
+  height: 214px;
+  display: block;
+  margin: 0 auto;
+
+  &--other {
+    width: 229px;
+    height: 39px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .main-slogan {
+    width: $width-tablet;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    padding-top: 77px;
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      width: $width-tablet;
+      height: 57px;
+    }
+
+    &--other {
+      padding-top: 94px;
+      padding-bottom: 116px;
+    }
+  }
+
+  .main-slogan__img {
+    width: 460px;
+    height: 350px;
+
+    &--other {
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-slogan {
+    width: $width-desktop;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      width: 1200px;
+    }
+  }
+}
