@@ -1,6 +1,4 @@
 .catalog-photo {
-  width: 320px;
-  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
 }
@@ -56,10 +54,6 @@
 }
 
 @media (min-width: $width-tablet) {
-  .catalog-photo {
-    width: $width-tablet;
-  }
-
   .catalog-photo__title {
     font-size: 30px;
     line-height: 26px;
@@ -112,10 +106,6 @@
 }
 
 @media (min-width: $width-desktop) {
-  .catalog-photo {
-    width: $width-desktop;
-  }
-
   .catalog-photo__text {
     margin-left: 386px;
     margin-right: 386px;

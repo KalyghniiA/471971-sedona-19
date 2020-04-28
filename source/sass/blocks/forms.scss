@@ -1,0 +1,247 @@
+.forms__fieldset {
+  display: flex;
+  border: none;
+  border-bottom: 1px solid $color-grey-four;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.forms__input {
+  padding-top: 19px;
+  padding-left: 22px;
+  padding-bottom: 19px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: $color-grey-four;
+
+  &::placeholder {
+    font-size: 18px;
+    color: $color-dark;
+    font-weight: 700;
+  }
+
+  &--text {
+    margin-left: 14px;
+  }
+}
+
+.forms__label {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  &--checkbox {
+    padding-left: 75px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  &--radio {
+    padding-left: 75px;
+    margin-bottom: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.forms__radio + .forms__radio-btn {
+  position: absolute;
+  background-color: $color-grey-four;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  left: 0;
+}
+
+.forms__radio:checked + .forms__radio-btn {
+  background-color: $color-grey;
+  border-radius: 50%;
+  border: 15px solid $color-grey-four;
+}
+
+.forms__checkbox + .forms__checkbox-btn {
+  position: absolute;
+  background-color: $color-grey-four;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  border-radius: 5px;
+}
+
+.forms__checkbox:checked + .forms__checkbox-btn {
+  background-image: url(../../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.forms__legend {
+  margin-bottom: 25px;
+}
+
+.forms__textarea {
+  width: 279px;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-dark;
+  font-weight: 700;
+  border: none;
+  background-color: $color-grey-four;
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-left: 21px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-dark;
+    font-weight: 700;
+  }
+}
+
+.forms__binding {
+  font-size: 0;
+}
+
+@media (min-width: $width-tablet) {
+  .forms__title {
+    font-size: 30px;
+  }
+
+  .forms__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+    line-height: 26px;
+  }
+
+  .forms__fieldset {
+    border: none;
+    width: 310px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--impression {
+      order: -1;
+      border-right: 1px solid $color-grey-four;
+    }
+
+    &--contacts {
+      width: 100%;
+    }
+
+    &--attractions {
+      width: 100%;
+    }
+
+    &--textarea {
+      width: 100%;
+    }
+  }
+   .forms__container-attractions {
+    width: 438px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .forms__label {
+
+    &--checkbox {
+      width: 218px;
+    }
+  }
+
+  .forms__textarea {
+    width: 100%;
+  }
+
+  .forms__container-btn {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forms__button {
+    width: 324px;
+    margin: 0;
+  }
+
+  .forms__binding {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .forms__main {
+    width: 960px;
+  }
+
+  .forms__fieldset {
+    width: 426px;
+
+    &--contacts {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--attractions {
+      width: 100%;
+    }
+
+    &--textarea {
+      width: 100%;
+    }
+  }
+
+  .forms__container-contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  .forms__input {
+    &--contact {
+      width: 315px;
+      margin-bottom: 0;
+      margin-left: 16px;
+
+      &:first-of-type {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .forms__span-visually {
+    font-size: 0;
+  }
+
+  .forms__container-attractions {
+    width: 100%;
+  }
+
+  .forms__container-btn {
+    width: 100%;
+  }
+
+  .forms__button {
+    width: 480px;
+  }
+}
