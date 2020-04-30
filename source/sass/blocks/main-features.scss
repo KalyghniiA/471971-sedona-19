@@ -1,6 +1,4 @@
 .main-features {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 43px;
   text-transform: uppercase;
 }
@@ -27,10 +25,6 @@
 }
 
 @media (min-width: $width-tablet) {
-  .main-features {
-    width: $width-tablet;
-  }
-
   .main-features__title {
     margin-left: 139px;
     margin-right: 139px;
@@ -44,10 +38,6 @@
 }
 
 @media (min-width: $width-desktop) {
-  .main-features {
-    width: $width-desktop;
-  }
-
   .main-features__title {
     margin-left: 355px;
     margin-right: 355px;

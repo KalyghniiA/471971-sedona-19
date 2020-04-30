@@ -2,8 +2,6 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  width: 320px;
-  margin: 0 auto;
   padding-top: 90px;
   padding-left: 20px;
   padding-right: 19px;
@@ -44,7 +42,6 @@
 
 @media (min-width: $width-tablet) {
   .main-slogan {
-    width: $width-tablet;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     padding-top: 77px;
 
@@ -72,7 +69,6 @@
 
 @media (min-width: $width-desktop) {
   .main-slogan {
-    width: $width-desktop;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &::after {

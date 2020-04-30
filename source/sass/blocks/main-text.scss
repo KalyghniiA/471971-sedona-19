@@ -12,3 +12,10 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $width-tablet) {
+  .main-text__text {
+    margin-right: 165px;
+    margin-left: 165px;
+  }
+}

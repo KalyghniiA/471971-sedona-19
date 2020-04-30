@@ -1,6 +1,4 @@
 .main-header {
-  width: 320px;
-  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -67,10 +65,6 @@
 }
 
 @media (min-width: $width-tablet) {
-  .main-header {
-    width: $width-tablet;
-  }
-
   .main-header__list {
     display: flex;
     margin-bottom: 0;
@@ -102,10 +96,6 @@
 }
 
 @media (min-width: $width-desktop) {
-  .main-header {
-    width: $width-desktop;
-  }
-
   .main-header__link {
     width: 239px;
   }
