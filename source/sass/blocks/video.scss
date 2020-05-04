@@ -4,9 +4,15 @@
   position: relative;
 }
 
+.video__title {
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+
 .video__text {
   margin-left: 44px;
   margin-right: 41px;
+  margin-bottom: 31px;
 }
 
 .video__video-img {
@@ -39,10 +45,10 @@
 
 .video__btn-box {
   background-color: $color-grey-two;
-  padding-top: 19px;
-  padding-right: 23px;
+  padding-top: 22px;
+  padding-right: 17px;
   padding-left: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   display: flex;
 }
 
@@ -51,7 +57,11 @@
   background-color: transparent;
 
   &--restart {
-    margin-right: auto;
+    margin-right: 122px;
+  }
+
+  &--quality {
+    margin-right: 18px;
   }
 }
 
@@ -63,17 +73,20 @@
   .video__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 29px;
   }
 
   .video__text {
-    margin-left: 176px;
-    margin-right: 176px;
+    margin-left: 161px;
+    margin-right: 167px;
+    margin-bottom: 70px;
   }
 
   .video__video-img {
     width: 648px;
     height: 500px;
     margin: 0 auto;
+    margin-bottom: 44px;
   }
 
   .video__navigation {
@@ -86,8 +99,8 @@
   .video__time-box {
     position: absolute;
     background-color: transparent;
-    bottom: 10px;
-    left: 93px;
+    bottom: 25px;
+    left: 70px;
   }
 
   .video__time {
@@ -98,7 +111,15 @@
     width: 648px;
     background-color: rgba($color-dark, 0.6);
     padding-right: 41px;
-    padding-left: 25px;
+    padding-left: 29px;
+    padding-top: 36px;
+    padding-bottom: 35px;
+  }
+
+  .video__btn {
+    &--restart {
+      margin-right: 465px;
+    }
   }
 }
 
@@ -107,13 +128,19 @@
     width: $width-desktop;
   }
 
+  .video__title {
+    margin-top: 72px;
+  }
+
   .video__text {
     margin-left: 392px;
     margin-right: 392px;
+    margin-bottom: 68px;
   }
 
   .video__video-img {
     width: 800px;
+    margin-bottom: 89px;
   }
 
   .video__navigation {
@@ -123,6 +150,14 @@
 
   .video__btn-box {
     width: 800px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .video__btn {
+    &--restart {
+      margin-right: 613px;
+    }
   }
 
   .video__time {
