@@ -2,7 +2,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 90px;
+  padding-top: 87px;
   padding-left: 20px;
   padding-right: 19px;
   padding-bottom: 85px;
@@ -44,6 +44,7 @@
   .main-slogan {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     padding-top: 77px;
+    padding-bottom: 91px;
 
     &::after {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -74,6 +75,11 @@
     &::after {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
       width: 1200px;
+    }
+
+    &--other {
+      padding-top: 102px;
+      padding-bottom: 119px;
     }
   }
 }

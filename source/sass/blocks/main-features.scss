@@ -1,5 +1,5 @@
 .main-features {
-  padding-top: 43px;
+  padding-top: 29px;
   text-transform: uppercase;
 }
 
@@ -12,9 +12,10 @@
   line-height: 26px;
   color: $color-grey;
   text-align: center;
+  margin-top: 27px;
   margin-left: 32px;
   margin-right: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .main-features__list {
@@ -25,9 +26,20 @@
 }
 
 @media (min-width: $width-tablet) {
+  .main-features {
+    padding-top: 37px;
+  }
+
+  .main-features__text {
+    margin-left: 21px;
+    margin-right: 24px;
+    margin-bottom: 50px;
+  }
+
   .main-features__title {
     margin-left: 139px;
     margin-right: 139px;
+    font-size: 21px;
   }
 
   .main-features__list {

@@ -2,14 +2,47 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 33px;
+  padding-top: 13px;
   padding-bottom: 49px;
   text-transform: uppercase;
+}
+
+.main-form__btn {
+  margin-top: 33px;
 }
 
 @media (min-width: $width-tablet) {
   .main-form {
     padding-left: 155px;
     padding-right: 155px;
+    padding-top: 34px;
+  }
+
+  .main-form__title {
+    font-size: 30px;
+  }
+
+  .main-form__text {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+
+  .main-form__btn {
+    margin-top: 41px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-form__text {
+    margin-right: 240px;
+    margin-left: 240px;
+  }
+
+  .main-form__btn {
+    margin-top: 45px;
+    margin-bottom: 16px;
+    width: 459px;
   }
 }
