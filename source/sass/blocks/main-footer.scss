@@ -33,7 +33,7 @@
     justify-content: start;
     align-items: center;
     margin-top: 0;
-    padding-top: 7px;
+    padding-top: 2px;
   }
 
   .main-footer__developers {
@@ -43,14 +43,14 @@
   }
 
   .main-footer__hastag {
-    margin-top: 42px;
+    margin-top: 39px;
     margin-left: 60px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .main-footer__hastag {
-    margin-left: 119px;
+    margin-left: 120px;
   }
 
   .main-footer__developers {
