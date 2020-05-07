@@ -42,36 +42,36 @@
         <h2 class="forms__title main-text__title">Оставьте свой отзыв</h2>
         <p class="forms__text main-text__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form action="https://echo.htmlacademy.ru" method="GET" class="forms__main">
-          <fieldset class="forms__fieldset main-text">
-            <legend class="forms__legend main-text__title">Представьтесь:</legend>
-            <label class="forms__label">
-              Имя*:
-              <input type="text" name="name" class="forms__input forms__input--text" required placeholder="Петр">
-            </label>
-            <label class="forms__label">
-              Фамилия*:
-              <input type="text" name="name" class="forms__input forms__input--text" required placeholder="Иванов">
-            </label>
-            <label class="forms__label">
-              Отчество:
-              <input type="text" name="name" class="forms__input forms__input--text" placeholder="Александрович">
-            </label>
-          </fieldset>
-          <fieldset class="forms__fieldset forms__fieldset--contacts main-text">
-            <legend class="forms__legend main-text__title">Контактная информация:</legend>
-            <div class="forms__container-contacts">
-
-                <label class="forms__label"><span class="forms__span-visually">Контактный </span>телефон*:</label>
-                <input type="tel" name="phone" class="forms__input forms__input--contact" required placeholder="Введите телефон">
-
-
-                <label class="forms__label">Электронная почта*:</label>
-                <input type="email" name="email" class="forms__input forms__input--contact" required placeholder="Введите e-mail">
-
+          <div class="forms__fieldset forms__fieldset--name main-text">
+            <span class="forms__legend forms__legend--name main-text__title">Представьтесь:</span>
+            <div class="forms__container-name">
+              <label class="forms__label" for="name">Имя*:</label>
+              <input type="text" name="name" id="name" class="forms__input forms__input--text" required placeholder="Петр">
             </div>
-          </fieldset>
-          <fieldset class="forms__fieldset forms__fieldset--impression main-text">
-            <legend class="forms__legend main-text__title">Ваше общее впечатление:</legend>
+            <div class="forms__container-name">
+              <label class="forms__label" for="surname">Фамилия*:</label>
+              <input type="text" name="surname" id="surname" class="forms__input forms__input--text" required placeholder="Иванов">
+            </div>
+            <div class="forms__container-name">
+              <label class="forms__label" for="patronymic">Отчество:</label>
+              <input type="text" name="patronymic" id="patronymic" class="forms__input forms__input--text" placeholder="Александрович">
+            </div>
+          </div>
+          <div class="forms__fieldset forms__fieldset--contacts main-text">
+            <span class="forms__legend forms__legend--contacts forms__legend--main main-text__title">Контактная информация:</span>
+            <div class="forms__container-contacts">
+                <label class="forms__label forms__label--contact"><span class="forms__span-visually">Контактный </span>телефон*:</label>
+                <div class="forms__container-input forms__container-input--phone">
+                  <input type="tel" name="phone" class="forms__input forms__input--contact forms__input--phone" required placeholder="Введите телефон">
+                </div>
+                <label class="forms__label forms__label--contact">Электронная почта*:</label>
+                <div class="forms__container-input forms__container-input--mail">
+                  <input type="email" name="email" class="forms__input forms__input--contact forms__input--mail" required placeholder="Введите e-mail">
+                </div>
+            </div>
+          </div>
+          <div class="forms__fieldset forms__fieldset--impression main-text">
+            <span class="forms__legend forms__legend--radio main-text__title">Ваше общее впечатление:</span>
             <label class="forms__label forms__label--radio">
               <input type="radio" name="impression" class="forms__check forms__radio visually-hidden" checked>
               <span class="forms__check-btn forms__radio-btn"></span>
@@ -87,9 +87,9 @@
               <span class="forms__check-btn forms__radio-btn"></span>
               Затрудняюсь ответить
             </label>
-          </fieldset>
-          <fieldset class="forms__fieldset forms__fieldset--attractions main-text">
-            <legend class="forms__legend main-text__title">посещенные достопримечательности:</legend>
+          </div>
+          <div class="forms__fieldset forms__fieldset--attractions main-text">
+            <span class="forms__legend forms__legend--checkbox forms__legend--main main-text__title">посещенные</br> достопримечательности:</span>
             <div class="forms__container-attractions">
               <label class="forms__label forms__label--checkbox">
                 <input type="checkbox" class="forms__check forms__checkbox visually-hidden" name="bridge-devil" checked>
@@ -112,11 +112,11 @@
                 Красные скалы
               </label>
             </div>
-          </fieldset>
-          <fieldset class="forms__fieldset forms__fieldset--textarea main-text">
-            <legend class="forms__legend main-text__title">Опишите свои эмоции:</legend>
-            <textarea name="emotions" cols="26" rows="6" placeholder="Опишите подробно все свои восторги" class="forms__textarea"></textarea>
-          </fieldset>
+          </div>
+          <div class="forms__fieldset forms__fieldset--textarea main-text">
+            <span class="forms__legend forms__legend--textarea forms__legend--main main-text__title">Опишите свои эмоции:</span>
+            <textarea name="emotions" cols="26" rows="5" placeholder="Опишите подробно все свои восторги" class="forms__textarea"></textarea>
+          </div>
           <div class="forms__container-btn">
             <button type="button" class="forms__button button">отправить отзыв</button>
             <span class="forms__binding">* — обязательные поля</span>
