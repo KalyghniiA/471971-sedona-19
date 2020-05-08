@@ -48,13 +48,18 @@
 }
 
 @media (min-width: $width-desktop) {
+  .main-form__title {
+    margin-bottom: 33px;
+  }
+
   .main-form__text {
-    margin-right: 240px;
-    margin-left: 240px;
+    margin-right: 220px;
+    margin-left: 220px;
+    margin-bottom: 46px;
   }
 
   .main-form__btn {
-    margin-top: 45px;
+    margin-top: 0;
     margin-bottom: 16px;
     width: 459px;
   }
