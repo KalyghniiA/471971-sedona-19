@@ -433,6 +433,10 @@
     &--textarea {
       margin-bottom: 56px;
     }
+
+    &--checkbox {
+      margin-bottom: 54px;
+    }
   }
 
   .forms__label {
@@ -444,6 +448,18 @@
       margin-left: 0;
       margin-right: 17px;
       margin-bottom: 0;
+    }
+
+    &--checkbox {
+      margin-right: 21px;
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 
@@ -482,7 +498,7 @@
     width: 480px;
   }
 
-  .forms__check + .forms__check-btn {
+  .forms__radio + .forms__radio-btn {
     left: 8px;
     top: -13px;
   }

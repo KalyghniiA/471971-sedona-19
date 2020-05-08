@@ -7,8 +7,17 @@
   text-transform: uppercase;
 }
 
-.main-form__btn {
-  margin-top: 33px;
+.main-form__title {
+  margin-bottom: 23px;
+}
+
+.main-form__text {
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+
+.main-form__br {
+  display: none;
 }
 
 @media (min-width: $width-tablet) {
@@ -20,10 +29,10 @@
 
   .main-form__title {
     font-size: 30px;
+    margin-bottom: 35px;
   }
 
   .main-form__text {
-    margin-top: 35px;
     margin-bottom: 10px;
     line-height: 24px;
   }
@@ -31,6 +40,10 @@
   .main-form__btn {
     margin-top: 41px;
     margin-bottom: 8px;
+  }
+
+  .main-form__br {
+    display: block;
   }
 }
 

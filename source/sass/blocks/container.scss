@@ -1,5 +1,7 @@
 .container {
   width: 320px;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  background-color: $color-light;
   margin: 0 auto;
 }
 
@@ -12,6 +14,5 @@
 @media (min-width: $width-desktop) {
   .container {
     width: $width-desktop;
-    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }
