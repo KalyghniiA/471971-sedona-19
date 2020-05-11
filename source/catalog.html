@@ -10,7 +10,11 @@
   <div class="container">
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img src="img/logo-sedona-mobile.svg" alt="" class="main-header__logo-img">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="" class="main-header__logo-img">
+        </picture>
       </a>
       <nav class="main-header__nav">
         <button class="main-header__btn-menu" type="button">
@@ -19,10 +23,10 @@
         <div class="main-header__wrap">
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a href="index.html" class="main-header__link">Главная</a>
+              <a href="#" class="main-header__link">Главная</a>
             </li>
             <li class="main-header__item">
-              <a href="#" class="main-header__link">фото и видео</a>
+              <a href="catalog.html" class="main-header__link">фото и видео</a>
             </li>
             <li class="main-header__item">
               <a href="form.html" class="main-header__link">Форма отзыва</a>
