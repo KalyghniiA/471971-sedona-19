@@ -26,6 +26,19 @@
 .main-footer__developers-img {
   width: 27px;
   height: 34px;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: $color-dark;
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $width-tablet) {
