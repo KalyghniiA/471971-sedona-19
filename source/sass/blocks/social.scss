@@ -13,6 +13,20 @@
   width: 46px;
   height: 48px;
   background-color: $main-color;
+  fill: $color-light;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
+
+  &:focus {
+    background-color: $main-color-hover;
+  }
+
+  &:active {
+    background-color: $main-color-down;
+    fill-opacity: 0.3;
+  }
 }
 
 .social__img {

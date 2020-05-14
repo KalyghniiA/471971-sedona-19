@@ -142,7 +142,7 @@
 
 @media (min-width: $width-desktop) {
   .catalog-photo__title {
-    margin-top: 113px;
+    margin-top: 112px;
   }
 
   .catalog-photo__text {
@@ -179,5 +179,11 @@
     z-index: 3;
     background-color: rgba($color-dark, 0.6);
     color: $color-light;
+  }
+
+  .catalog-photo__like {
+    &::before {
+      background-image: url("../img/icon-like-white.svg");
+    }
   }
 }

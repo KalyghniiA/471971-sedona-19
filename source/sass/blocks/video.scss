@@ -55,6 +55,7 @@
 .video__btn {
   border: none;
   background-color: transparent;
+  fill: $color-grey-five;
 
   &--restart {
     margin-right: 122px;
@@ -62,6 +63,19 @@
 
   &--quality {
     margin-right: 18px;
+  }
+
+  &:hover {
+    fill: $color-grey;
+  }
+
+  &:focus {
+    fill: $color-grey;
+  }
+
+  &:active {
+    fill: $color-grey;
+    fill-opacity: 0.3;
   }
 }
 
@@ -117,8 +131,22 @@
   }
 
   .video__btn {
+    fill: $color-light;
+
     &--restart {
       margin-right: 465px;
+    }
+
+    &:hover {
+      fill-opacity: 0.6;
+    }
+
+    &:focus {
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
     }
   }
 }
