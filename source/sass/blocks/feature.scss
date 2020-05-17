@@ -59,6 +59,7 @@
   display: block;
   width: 320px;
   height: 260px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $width-tablet) {
@@ -139,7 +140,7 @@
     margin-right: 115px;
 
     &--two {
-      margin-right: 100px;
+      margin-right: 99px;
       margin-left: 100px;
     }
   }
