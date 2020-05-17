@@ -1,5 +1,5 @@
 /*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
-
+/* stylelint-disable */
 function embed(parent, svg, target, use) {
 	// if the target exists
 	if (target) {
@@ -256,3 +256,4 @@ function getSVGAncestor(node) {
 	return svg;
 }
 
+/* stylelint-enable */
