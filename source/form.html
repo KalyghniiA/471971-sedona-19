@@ -57,11 +57,11 @@
             <span class="forms__legend forms__legend--name main-text__title">Представьтесь:</span>
             <div class="forms__container-name">
               <label class="forms__label" for="name">Имя*:</label>
-              <input type="text" name="name" id="name" class="forms__input forms__input--text" required placeholder="Петр">
+              <input type="text" name="name" id="name" class="forms__input forms__input--required forms__input--text" required placeholder="Петр">
             </div>
             <div class="forms__container-name">
               <label class="forms__label" for="surname">Фамилия*:</label>
-              <input type="text" name="surname" id="surname" class="forms__input forms__input--text" required placeholder="Иванов">
+              <input type="text" name="surname" id="surname" class="forms__input forms__input--required forms__input--text" required placeholder="Иванов">
             </div>
             <div class="forms__container-name">
               <label class="forms__label" for="patronymic">Отчество:</label>
@@ -73,11 +73,11 @@
             <div class="forms__container-contacts">
                 <label class="forms__label forms__label--contact"><span class="forms__span-visually">Контактный </span>телефон*:</label>
                 <div class="forms__container-input forms__container-input--phone">
-                  <input type="tel" name="phone" class="forms__input forms__input--contact forms__input--phone" required placeholder="Введите телефон">
+                  <input type="tel" name="phone" class="forms__input forms__input--contact forms__input--required forms__input--phone" required placeholder="Введите телефон">
                 </div>
                 <label class="forms__label forms__label--contact">Электронная почта*:</label>
                 <div class="forms__container-input forms__container-input--mail">
-                  <input type="email" name="email" class="forms__input forms__input--contact forms__input--mail" required placeholder="Введите e-mail">
+                  <input type="email" name="email" class="forms__input forms__input--contact forms__input--required forms__input--mail" required placeholder="Введите e-mail">
                 </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
             <textarea name="emotions" cols="26" rows="5" placeholder="Опишите подробно все свои восторги" class="forms__textarea"></textarea>
           </div>
           <div class="forms__container-btn">
-            <button type="button" class="forms__button button">отправить отзыв</button>
+            <button type="submit" class="forms__button button">отправить отзыв</button>
             <span class="forms__binding">* — обязательные поля</span>
           </div>
         </form>
@@ -166,7 +166,20 @@
         </svg>
       </a>
     </footer>
+    <div class="popap popap--sent main-text visually-hidden">
+      <h2 class="popap__title popap__title--sent main-text__title">Ваш отзыв отправлен!</h2>
+      <p class="popap__description popap__description--sent main-text__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.</br> В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popap__container">
+        <button class="popap__button popap__button--sent button" type="button">закрыть окно</button>
+      </div>
+    </div>
+    <div class="popap popap--error main-text visually-hidden">
+      <h2 class="popap__title popap__title--error main-text__title">что-то пошло не так!</h2>
+      <p class="popap__description popap__description--error main-text__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popap__button popap__button--error button" type="button">ок</button>
+    </div>
   </div>
   <script src="js/svg4everybody.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
