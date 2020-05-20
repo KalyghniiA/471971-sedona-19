@@ -20,6 +20,7 @@ formsBtn.addEventListener ("click", function(evt) {
 
   if (inputError) {
     popapError.classList.remove("visually-hidden");
+    inputRequired[i].classList.add("forms__input--error");
   } else {
     popapSent.classList.remove("visually-hidden");
   }
