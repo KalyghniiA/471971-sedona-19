@@ -1,0 +1,77 @@
+.popap {
+  position: fixed;
+  width: 320px;
+  z-index: 5;
+  top: 25%;
+  background-color: $color-light;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  padding-top: 35px;
+}
+
+.popap__title {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.popap__description {
+  margin-left: 52px;
+  margin-right: 54px;
+  margin-bottom: 40px;
+}
+
+.popap__container {
+  background-color: $color-grey-four;
+  width: 100%;
+  padding: 20px;
+}
+
+.popap__button {
+  &--error {
+    width: 180px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .popap {
+    width: 640px;
+    left: 50%;
+    margin-left: -320px;
+    padding-top: 63px;
+
+    &--error {
+      width: 400px;
+      margin-left: -200px;
+      padding-left: 61px;
+      padding-right: 61px;
+    }
+  }
+
+  .popap__title {
+    font-size: 30px;
+
+    &--error {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  .popap__description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .popap__container {
+    padding: 44px 91px;
+  }
+
+  .popap__button {
+    &--error {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

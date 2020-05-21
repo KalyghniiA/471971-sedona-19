@@ -47,13 +47,16 @@
 }
 
 .forms__input {
-  padding-top: 21px;
+  padding-top: 19px;
   padding-left: 22px;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
   width: 100%;
   margin-bottom: 20px;
   border: none;
   background-color: $color-grey-four;
+  font-size: 18px;
+  color: $color-dark;
+  font-weight: 700;
 
   &::placeholder {
     font-size: 18px;
@@ -77,9 +80,17 @@
   &:focus {
     border: 4px solid $color-disabled;
     background-color: $color-light;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-left: 18px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
+  }
+
+  &--error {
+    border: 4px solid red;
+    background-color: $color-light;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-bottom: 15px;
   }
 }
 
@@ -226,6 +237,7 @@
   padding-right: 22px;
   padding-left: 21px;
   padding-bottom: 13px;
+  resize: none;
 
   &::placeholder {
     font-size: 18px;
