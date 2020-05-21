@@ -6,8 +6,13 @@ var inputRequired = document.querySelectorAll(".forms__input--required");
 var popapBtnSent = document.querySelector(".popap__button--sent");
 var popapBtnError = document.querySelector(".popap__button--error");
 var popap = document.querySelector(".popap");
+var formsName = document.querySelector(".forms__input--name");
+var formsSubname = document.querySelector(".forms__input--subname");
+var formsPhone = document.querySelector(".forms__input--phone");
+var formsMail = document.querySelector(".forms__input--mail");
 
-formsBtn.addEventListener ("click", function(evt) {
+
+/* formsBtn.addEventListener ("click", function(evt) {
   evt.preventDefault();
   var inputError = false;
 
@@ -24,6 +29,53 @@ formsBtn.addEventListener ("click", function(evt) {
   } else {
     popapSent.classList.remove("visually-hidden");
   }
+}); */
+
+formsBtn.addEventListener ("click", function(evt) {
+  evt.preventDefault();
+  var inputError = false;
+
+  if(!formsName.value) {
+    inputError = true;
+    formsName.classList.add("forms__input--error");
+  }
+
+  if(!formsSubname.value) {
+    inputError = true;
+    formsSubname.classList.add("forms__input--error");
+  }
+
+  if(!formsPhone.value) {
+    inputError = true;
+    formsPhone.classList.add("forms__input--error");
+  }
+
+  if(!formsMail.value) {
+    inputError = true;
+    formsMail.classList.add("forms__input--error");
+  }
+
+  if (inputError) {
+    popapError.classList.remove("visually-hidden");
+  } else {
+    popapSent.classList.remove("visually-hidden");
+  }
+});
+
+formsName.addEventListener ("keyup", function(evt) {
+  formsName.classList.remove("forms__input--error");
+});
+
+formsSubname.addEventListener ("keyup", function(evt) {
+  formsSubname.classList.remove("forms__input--error");
+});
+
+formsPhone.addEventListener ("keyup", function(evt) {
+  formsPhone.classList.remove("forms__input--error");
+});
+
+formsMail.addEventListener ("keyup", function(evt) {
+  formsMail.classList.remove("forms__input--error");
 });
 
 popapBtnSent.addEventListener ("click", function(evt) {
