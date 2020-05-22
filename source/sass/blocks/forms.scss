@@ -510,6 +510,7 @@
   .forms__container-contacts {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .forms__input {
